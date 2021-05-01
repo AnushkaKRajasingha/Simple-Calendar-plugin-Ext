@@ -1,0 +1,140 @@
+/* Specific styles for our FC output */
+
+.simcal-fullcalendar-grid {
+	font-size: 14px;
+	font-family: sans-serif;
+}
+
+.simcal-fullcalendar-grid .fc table {
+	margin: 0;
+}
+
+.simcal-fullcalendar-grid .fc-widget-header table {
+	margin: 0;
+}
+
+.simcal-fullcalendar-grid .fc-center h2 {
+	font-weight: 400;
+	font-size: 22px;
+}
+
+.simcal-fullcalendar-grid .fc th {
+	font-weight: normal;
+}
+
+.simcal-fullcalendar-grid .fc-event {
+	cursor: pointer;
+	display: block;
+	font-size: .85em;
+	line-height: 1.3;
+	border-radius: 3px;
+	border: 1px solid #3a87ad;
+	background-color: #3a87ad;
+	font-weight: 400;
+}
+
+.simcal-fullcalendar-grid .fc-state-default {
+	background-color: #f5f5f5;
+	background-image: -moz-linear-gradient(top, #fff, #e6e6e6);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#e6e6e6));
+	background-image: -webkit-linear-gradient(top, #fff, #e6e6e6);
+	background-image: -o-linear-gradient(top, #fff, #e6e6e6);
+	background-image: linear-gradient(to bottom, #fff, #e6e6e6);
+	background-repeat: repeat-x;
+	border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	color: #333;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	text-transform: lowercase;
+	font-weight: 400;
+}
+
+.simcal-fullcalendar-grid div[id*="fullcalendar-"] button {
+	font-family: sans-serif;
+}
+
+.simcal-fullcalendar-grid div[id*="fullcalendar-"] .fc-state-disabled:hover,
+.simcal-fullcalendar-grid div[id*="fullcalendar-"] .fc-state-disabled:focus,
+.simcal-fullcalendar-grid div[id*="fullcalendar-"] .fc-state-disabled,
+.simcal-fullcalendar-grid div[id*="fullcalendar-"] button[disabled]:hover,
+.simcal-fullcalendar-grid div[id*="fullcalendar-"] button[disabled]:focus,
+.simcal-fullcalendar-grid div[id*="fullcalendar-"] input[type="button"][disabled]:hover,
+.simcal-fullcalendar-grid div[id*="fullcalendar-"] input[type="button"][disabled]:focus,
+.simcal-fullcalendar-grid div[id*="fullcalendar-"] input[type="reset"][disabled]:hover,
+.simcal-fullcalendar-grid div[id*="fullcalendar-"] input[type="reset"][disabled]:focus {
+	border: 1px solid;
+	background-color: #e6e6e6;
+	background-image: none;
+	opacity: .65;
+	filter: alpha(opacity=65);
+	box-shadow: none;
+	border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	color: #333;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	text-transform: lowercase;
+	font-weight: 400;
+	height: 2.1em;
+	padding: 0 .6em;
+	font-size: 1em;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.simcal-fullcalendar-grid .fc-state-hover,
+.simcal-fullcalendar-grid .fc-state-down,
+.simcal-fullcalendar-grid .fc-state-active,
+.simcal-fullcalendar-grid .fc-state-disabled {
+	color: #333;
+	background-color: #e6e6e6;
+}
+
+.simcal-fullcalendar-grid .fc-state-hover {
+	color: #333;
+	text-decoration: none;
+	background-position: 0 -15px;
+	-webkit-transition: background-position 0.1s linear;
+	-moz-transition: background-position 0.1s linear;
+	-o-transition: background-position 0.1s linear;
+	transition: background-position 0.1s linear;
+}
+
+.simcal-fullcalendar-grid .fc-state-down,
+.simcal-fullcalendar-grid .fc-state-active {
+	background-color: #ccc;
+	background-image: none;
+	box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.simcal-fullcalendar-grid .fc-state-disabled {
+	cursor: default;
+	background-image: none;
+	opacity: 0.65;
+	filter: alpha(opacity=65);
+	box-shadow: none;
+}
+
+/* Styles taken from SC Base (for now) */
+
+.simcal-fullcalendar-grid .simcal-ajax-loader > i {
+	font-size: 48px;
+	left: 50%;
+	line-height: 1;
+	margin: -36px 0 0 -36px;
+	position: absolute;
+	top: 50%;
+	z-index: 999;
+}
+
+.simcal-fullcalendar-grid .simcal-ajax-loader.simcal-spinner-top > i {
+	top: 100px;
+}
+
+.simcal-fullcalendar-grid .simcal-ajax-loader {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.simcal-fullcalendar-grid .simcal-ajax-loader > i {
+	color: rgba(0, 0, 0, 0.3);
+}
